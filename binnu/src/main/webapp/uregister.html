@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Register</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        h2 {
+            background-color: #dc3545;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #dee2e6;
+        }
+        th {
+            background-color: #f8f9fa;
+        }
+        input[type="text"], input[type="submit"], input[type="reset"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        }
+        input[type="submit"], input[type="reset"] {
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover, input[type="reset"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <form method="POST" action="uregister">
+        <table>
+            <tr>
+                <th>Enter name</th>
+                <td><input type="text" name="username" placeholder="Username"></td>
+            </tr>
+            
+            <tr>
+                <th>Enter sex</th>
+                <td><input type="text" name="sex" placeholder="sex"></td>
+            </tr>
+            
+            <tr>
+                <th>Enter email</th>
+                <td><input type="email" name="email" placeholder="email"></td>
+            </tr>
+            
+            <tr>
+                <th>Set password</th>
+                <td><input type="password" name="password" placeholder="Password" ></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Register" name="submit" class="submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
